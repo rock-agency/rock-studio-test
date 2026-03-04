@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Figma styleguide tokens (Webflow Template V04) */
+:root {
+  --background: #ffffff;
+  --foreground: #1f1d1e;
+  --brand: #c6fb50;
+  --brand-text: #1f1d1e;
+  --dark-900: #1f1d1e;
+  --theme-border: #dadada;
+  --space-0: 0px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 40px;
+  --space-8: 64px;
+  --site-margin: 48px;
+  --site-gutter: 16px;
+  --section-space-main: 112px;
+  --section-space-large: 160px;
+  --radius-small: 8px;
+  --radius-round: 9999px;
+  --border-width-main: 1.5px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-text: var(--brand-text);
+  --color-dark-900: var(--dark-900);
+  --color-theme-border: var(--theme-border);
+  --font-sans: var(--font-primary);
+  --font-mono: var(--font-geist-mono);
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --radius-sm: var(--radius-small);
+  --radius-full: var(--radius-round);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1f1d1e;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary), ui-sans-serif, sans-serif;
+}
